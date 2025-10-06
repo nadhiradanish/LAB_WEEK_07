@@ -18,6 +18,11 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    secrets {
+        propertiesFileName = "secrets.properties"
+    }
+
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -53,5 +58,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 
 }
